@@ -1,0 +1,32 @@
+{
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ESNext",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": [
+        "./src/*",
+      ],
+      "@root/*": [
+        "./*",
+      ],
+      "@services/*": [
+        "./src/services/*"
+      ]
+    },
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // "skipLibCheck": true
+  }
+}
